@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+.board {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: auto; /* for height to be equal to content */
+}
+
+.cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .board {
+        width: 50%;
+        margin: 0px auto;
+    }
+}
